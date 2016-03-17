@@ -20,7 +20,7 @@
 
 #else // Linux byteswap defs
 
-#include <byteswap.h>
+#include "byteswap.h"
 #include <endian.h>
 
 #if __BYTE_ORDER == __LITTLE_ENDIAN
@@ -44,7 +44,7 @@
 class end_of_buffer : public std::exception {
 public:
   end_of_buffer(size_t needed, size_t available) {
-    snprintf(msg, 128, "End of buffer reached during a request for %lu bytes (%lu available)", needed, available);
+    snprintf(msg, 128, "End of buffer reached during a request for %llu bytes (%llu available)", needed, available);
   }
   virtual ~end_of_buffer() throw() {}
   virtual const char* what() const throw() { return msg; }

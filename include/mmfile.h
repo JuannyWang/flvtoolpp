@@ -8,9 +8,9 @@
 #pragma once
 
 #include <sys/stat.h>
-#include <sys/mman.h>
 #include <fcntl.h>
 #include <stdexcept>
+#include "mman.h"
 
 class mmfile {
 public:
@@ -37,7 +37,7 @@ public:
   }
 
   char* fbase;
-  size_t flen;
+  _off_t flen;
   int fd;
 private:
   mmfile(const mmfile& right); // noncopyable

@@ -1,0 +1,3 @@
+[submodule "ext/boost.shared_ptr"]
+	path = ext/boost.shared_ptr
+	url = https://github.com/coldfix/boost.shared_ptr

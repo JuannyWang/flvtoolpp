@@ -12,15 +12,20 @@
 #include "serialized_buffer.h"
 #include <float.h>
 #include <math.h>
-#include <netinet/in.h>
+
+#ifdef __linux__
+  #include #include <netinet/in.h>
+#elif _WIN32
+  #include <winsock2.h>
+#endif
 
 #ifdef __APPLE__
   #include <architecture/byte_order.h>
   #define hton64(x) OSSwapHostToBigInt64(x)
 #else
-  #include <byteswap.h>
+  #include "byteswap.h"
   #if __BYTE_ORDER == __LITTLE_ENDIAN
-    #define hton64(x) bswap_64(x)
+    #define hton64(x) __bswap_64(x)
   #else
     #define hton64(x) (x)
   #endif
