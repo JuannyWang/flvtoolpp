@@ -6,7 +6,7 @@ To get the latest version, go to: http://developers.facebook.com/opensource.php
   * CMake (https://cmake.org/)
 
 ### Compiling:
-  To compile, run "scons" wherever you untarred the code.
+  To compile, run "cmake" wherever you untarred the code.
 
 ### Running:
   Run flvtool++ with no arguments to learn about its usage.
