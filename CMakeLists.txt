@@ -10,9 +10,9 @@ include_directories(
 
 set(
         SOURCE_FILES
-        AMFData.cpp
-        mman.c
-        flvtool++.cpp
+        src/AMFData.cpp
+        src/mman.c
+        src/flvtool++.cpp
 )
 
 add_executable(flvtoolpp ${SOURCE_FILES})
