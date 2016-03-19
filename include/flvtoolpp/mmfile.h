@@ -10,7 +10,7 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <stdexcept>
-#include "mman.h"
+#include "mman/mman.h"
 
 class mmfile {
 public:

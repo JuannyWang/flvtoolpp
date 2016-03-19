@@ -5,10 +5,10 @@
  * All rights reserved.
  */
 
-#include "../include/common.h"
-#include "../include/AMFData.h"
-#include "../include/mmfile.h"
-#include "../include/bitstream.h"
+#include "flvtoolpp/common.h"
+#include "flvtoolpp/AMFData.h"
+#include "flvtoolpp/mmfile.h"
+#include "flvtoolpp/bitstream.h"
 
 inline uint32_t deserialize_uint24(char*& ptr) {
   uint32_t d = ((*(ptr++)) & 0xff) << 16;

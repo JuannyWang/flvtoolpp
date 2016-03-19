@@ -1,15 +1,10 @@
-cmake_minimum_required(VERSION 3.3)
-project(FLVTOOLPP)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c14")
 
-set(FLVTOOLPP_VERSION_MAJOR 1)
-set(FLVTOOLPP_VERSION_MINOR 2)
-set(FLVTOOLPP_VERSION_PATCH 2)
+include_directories("${FLVTOOLPP_SOURCE_DIR}/include")
 
-add_subdirectory(src/flvtoolpp)
+add_library (mman src/mman.c)
 
-if (WIN32)
-    add_subdirectory(src/mman)
-endif ()
+target_include_directories (mman PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 
 function(add_clang_static_analysis target)
     get_target_property(SRCs ${target} SOURCES)
