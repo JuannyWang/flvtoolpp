@@ -14,7 +14,7 @@ To get the latest version, go to: http://developers.facebook.com/opensource.php
 ### Notes:
   This code is provided with absolutely no support from us, but patches and qualified bug reports are welcomed at opensource@facebook.com.
 
-###  Changelog
+### Changelog
 * 1.0 (September 7th, 2007) - Initial release
 * 1.1 (March 17th, 2008) - Added -strip, better handling of flags (always rebuilt when writing a new file), fixed some compile errors reported by users
 * 1.1.1 (September 3rd, 2008) - Add support for the TimestampExtended field in the FLV tag header, which allows properly calculating the duration of videos >4.5 hours long.
