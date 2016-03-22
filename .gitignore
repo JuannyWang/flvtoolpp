@@ -1,3 +1,7 @@
 .idea
 CMakeFiles
 CMakeCache.txt
+cmake_install.cmake
+Makefile
+flvtoolpp.exe
+libmman.a
