@@ -50,7 +50,7 @@ uint32_t process_timestamp(char tag_type, char*& fptr, uint32_t& last_timestamp)
 
 int main(int argc, char* argv[]) {
   if (argc < 2) {
-    printf("flvtool++ 1.2.1\nCopyright (c) 2007-2009 Dan Weatherford and Facebook, inc.\n");
+    printf("flvtool++ 1.2.2\nCopyright (c) 2007-2009 Dan Weatherford and Facebook, inc.\n");
     printf("http://developers.facebook.com/opensource.php\n");
     printf("Published under the BSD license.\n\n");
     printf("usage: flvtool++ [options] [input filename] [output filename]\n");
