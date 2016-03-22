@@ -5,11 +5,11 @@ set(FLVTOOLPP_VERSION_MAJOR 1)
 set(FLVTOOLPP_VERSION_MINOR 2)
 set(FLVTOOLPP_VERSION_PATCH 2)
 
-add_subdirectory(src/flvtoolpp)
-
 if (WIN32)
     add_subdirectory(src/mman)
 endif ()
+
+add_subdirectory(src/flvtoolpp)
 
 function(add_clang_static_analysis target)
     get_target_property(SRCs ${target} SOURCES)

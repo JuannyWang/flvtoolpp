@@ -230,9 +230,9 @@ int main(int argc, char* argv[]) {
                   h = ((vptr[1] & 0x7f) << 1) + ((vptr[2] & 0x80) >> 7);
                   break;
                 case 1: // abs w/h encoded as uint16s (BE)
-                  w  = ((vptr[0] & 0x7f) << 1) + ((vptr[1] & 0x80) >> 7) << 8;
+                  w  = (((vptr[0] & 0x7f) << 1) + ((vptr[1] & 0x80) >> 7)) << 8;
                   w += ((vptr[1] & 0x7f) << 1) + ((vptr[2] & 0x80) >> 7);
-                  h  = ((vptr[2] & 0x7f) << 1) + ((vptr[3] & 0x80) >> 7) << 8;
+                  h  = (((vptr[2] & 0x7f) << 1) + ((vptr[3] & 0x80) >> 7)) << 8;
                   h += ((vptr[3] & 0x7f) << 1) + ((vptr[4] & 0x80) >> 7);
                   break;
                 case 2: w=352; h=288; break;
