@@ -2,8 +2,8 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14")
 
 include_directories(
         "${FLVTOOLPP_SOURCE_DIR}/include/flvtoolpp/include"
-        "${FLVTOOLPP_SOURCE_DIR}/ext/include"
-        "${FLVTOOLPP_SOURCE_DIR}/ext/boost.shared_ptr"
+        "${FLVTOOLPP_SOURCE_DIR}/3rdparty/include"
+        "${FLVTOOLPP_SOURCE_DIR}/3rdparty/boost.shared_ptr"
 )
 
 file(GLOB FLVTOOLPP_SRC "src/*.cpp")
