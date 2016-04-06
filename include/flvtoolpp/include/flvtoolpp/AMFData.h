@@ -14,7 +14,7 @@
 #include <math.h>
 
 #ifdef __linux__
-  #include #include <netinet/in.h>
+  #include <netinet/in.h>
 #elif _WIN32
   #include <winsock2.h>
 #endif
