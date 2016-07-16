@@ -42,7 +42,7 @@ public:
   }
 
   char* fbase;
-  __off_t flen;
+  off_t flen;
   int fd;
 private:
   mmfile(const mmfile& right); // noncopyable
