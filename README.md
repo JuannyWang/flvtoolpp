@@ -1,9 +1,8 @@
 flvtool++ is a tool for hinting and manipulating the metadata of FLV files. It was originally created for Facebook's Video project (http://facebook.com/video/) for fast video hinting. It is loosely based on the Ruby FLVTool2, but is written in C++ for performance reasons.
 
-To get the latest version, go to: http://developers.facebook.com/opensource.php
-
 ### Requirements:
   * CMake (https://cmake.org/)
+  * GCC
 
 ### Compiling:
   To compile, run "cmake" wherever you untarred the code.
